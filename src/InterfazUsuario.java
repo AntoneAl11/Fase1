@@ -40,12 +40,54 @@ public class InterfazUsuario {
                 case 2:
                 System.out.println("Tarea Urgente: " + pilas.peek());
                 break;
-                    
-            
+
+                case 3:
+                System.out.println("Eliminando tarea urgente: " + pilas.pop());
+                break;
+
+                case 4: 
+                System.out.println("Ingrese la tarea programada: ");
+                String tprog = scanner.nextLine();
+                colas.enqueue(tprog);
+                break;
+
+                case 5:
+                System.out.println("Tarea programada: " + colas.front());
+                break;
+
+                case 6: 
+                System.out.println("Eliminando la tarea programada: " + colas.dequeue());
+                break;
+
+                case 7:
+                System.out.println("Ingrese la tarea por departamento: ");
+                String tdep = scanner.nextLine();
+                listas.insert(tdep);
+                break;
+
+                case 8:
+                System.out.println("Ingrese la tarea a eliminar: ");
+                String teli = scanner.nextLine();
+                listas.delete(teli);
+                break;
+
+                case 9:
+                System.out.println("Tareas por deparatamento: ");
+                for (String tarea : listas.getAll()){
+                    System.out.println(tarea);
+                }
+                break;
+
+                case 10:
+                System.out.println("Saliendo del sistema.....");
+                return;
+
                 default:
-                    break;
+                System.out.println("Opción ingresada no valida");
             }
         }
+    }
+
     }
 
 }
