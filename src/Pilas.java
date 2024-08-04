@@ -16,7 +16,7 @@ public class Pilas {
         return pila.isEmpty() ? null : pila.pop();
     }
     //Muestra la tarea mas reciente ingresada
-    public String peel(){
+    public String peek(){
         return pila.isEmpty() ? null : pila.peek();
     }
     //Verifica si la pila esta vacia

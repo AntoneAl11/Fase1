@@ -38,7 +38,7 @@ public class InterfazUsuario {
                 break;
                 
                 case 2:
-                System.out.println("Tarea Urgente: " + pilas.peek());
+                System.out.println("Tarea Urgente : " + pilas.peek());
                 break;
 
                 case 3:
